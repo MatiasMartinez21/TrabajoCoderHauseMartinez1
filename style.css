@@ -22,6 +22,15 @@ body {
 
     background-color: black;
 }
+/* body nostros.html */
+.bnosotros{
+   
+
+}
+
+
+
+
 
 .main-contenedor {
     display: flex;
@@ -186,14 +195,20 @@ a {
     display: flex;
     margin-top: 10%;
 }
+/* git para nosotros.html */
+ .main-nosotros {
+    display: grid;
 
-.main-nosotros {
+    
+ }
+
+/* {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
     margin-left: 20%;
-}
+} */ 
 
 .main-nosotros-div {
     padding: 5%;
