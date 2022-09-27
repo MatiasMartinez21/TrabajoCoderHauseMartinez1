@@ -22,12 +22,6 @@ body {
 
     background-color: black;
 }
-/* body nostros.html */
-.bnosotros{
-   
-
-}
-
 
 
 
@@ -198,11 +192,13 @@ a {
 /* git para nosotros.html */
  .main-nosotros {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: ;
 
     
  }
 
-/* {
+/*  main- nosotros original{
     display: flex;
     flex-direction: column;
     align-items: center;
