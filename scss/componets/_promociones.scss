@@ -1,0 +1,39 @@
+@import "../base/extend";
+
+.main-promociones{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    p{
+        color: white;
+    }
+    .tex-promo{
+        text-align: center;
+
+    }
+    .img-promo{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+        border: solid white;
+        @extend %marcos;
+        
+
+    }
+    .img-tarj{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        padding: 20px;
+        margin-top: 15px;
+        @extend %marcos;
+       
+    }
+}

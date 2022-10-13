@@ -1,0 +1,33 @@
+@import "../base/listas";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color:white;
+    font-size: nth($tamano-texto, $n:2 );
+}
+.titulo-de-todos{
+     font-family: oswald ;
+    color: aliceblue;
+    text-align: center;
+    font-size: nth($tamano-texto, $n:4 );
+}
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');

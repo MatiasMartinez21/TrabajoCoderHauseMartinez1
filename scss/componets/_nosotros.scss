@@ -1,0 +1,154 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/listas";
+
+.main-nosotros{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 700px;
+    padding: 20px;
+    gap: 15px;
+   
+
+
+
+    @media only screen and (max-width:450px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+
+
+    h3{
+        @media only screen and (max-width:450px)
+                    {
+                        font-size: nth($tamano-texto, $n:1 );
+
+                    }
+        color: white;
+         font-family: oswald;
+         font-size: nth($tamano-texto, $n:3 );
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .img1{
+
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        .img-nosotros
+    {
+        width: 100%;
+        height: 80%;
+       @extend %marcos;
+    }
+    }
+    .img2{
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+             grid-row: span 1;
+         
+        }
+        border: solid;
+        grid-column-start: 3;
+        grid-column-end: 4;
+
+        .img-nosotros
+        {
+            width: 100%;
+        height: 80%;
+        @extend %marcos;
+    }
+    }
+    .img3{
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+       
+        width: 100%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        // grid-row: span ;
+
+        .img-nosotros
+
+        {
+        width: 100%;
+        height: 80%;
+        @extend %marcos;
+       
+    }
+    }
+    .img4{ 
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+     
+        
+     border: solid ;
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        .img-nosotros
+    {
+            width: 100%;
+        height: 80%;
+        @extend %marcos;
+    }
+    }
+    .img5{
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+       
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        .img-nosotros
+    {
+            width: 100%;
+        height: 80%;
+        @extend %marcos;
+    }
+    }
+    .img6{
+        @media only screen and (max-width:450px)
+        {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        grid-column-start: 2;
+        grid-column-end: 6;
+        .img-nosotros
+        {
+            width: 100%;
+        height: 80%;
+        }
+    }
+
+
+
+
+
+
+}

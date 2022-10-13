@@ -1,0 +1,39 @@
+.footer-contenedor{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+    .nav-footer{
+        margin-right: 15px;
+        height: 100%;
+        .lista-footer{
+            @media only screen and (max-width:450px)
+                    {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: auto;
+
+                    }
+
+
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            list-style: none;
+            height: 100px;
+            .fotito{
+                width: 50px;
+                padding-right: 15px;
+
+            }
+        }
+    }
+}

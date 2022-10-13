@@ -1,0 +1,45 @@
+.main-turnos {
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+
+    .turnos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .img-turnos1 
+        {
+            @media only screen and (max-width:450px)
+            {
+                padding-bottom: 30px;
+            }
+            width: 100%;
+            height: 100%;
+        }
+        .img-turnos2
+        {
+            @media only screen and (max-width:450px)
+            {
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+            height: 100%;
+            width: 10%;
+        }
+        .img-turnos3{
+            @media only screen and (max-width:450px)
+            {
+                padding-bottom: 50px;
+                margin-top: 50px;
+            }
+            width: 30%;
+            height: 100%;
+        }
+    }
+   @media only screen and (max-width:450px){
+    margin: 10px;
+    padding: 10px;
+   } 
+}
