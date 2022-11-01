@@ -1,71 +1,27 @@
 .main-contenedor-index{
-                     display:grid;
-                    grid-template-columns: repeat(4, 1fr);
-
-
-                    @media only screen and (max-width:450px)
-                    {
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-
-                    }
-
-                    @media only screen and (min-width:451px) and (max-width:960px) {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(2, 1fr);
-                    }
+    .video-index{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) ;
+        z-index: -1; 
+    }
+    .nav-dos li{
+        list-style: none;
+        font-size: 3rem;
+        font-size: nth($list: $tamano-texto, $n:4 );
+        margin-top: 5%;
+        font-family: oswald;
+        display: flex;
+        justify-content: center;
     
-     .div-colum{
-        @media only screen and (max-width:450px){
-            display: none;
-
-        }
-        @media only screen and (min-width:451px) and (max-width:960px){
-            display: none;
-        }
-
-                    display: flex;
-                    padding-left: 200px;
-                    justify-content: center;
-                     font-family:oswald ;
-
-         .nav-dos li {
-                     
-                    list-style: none;
-                    bottom: 50%;
-                    color: white;
-                    font-size: 3rem;
-                    font-size: nth($tamano-texto, $n:4 );
-                    padding: 50px;
-                    display: block;
-                    text-align: center;
-                    margin-top: 5%;
-                    margin-bottom: 5%;
-                     font-family: oswald ;
-                    
-
-            
-        
-         }
-     }
-     .img-index{
-        @media only screen and (max-width:450px)
-        {
-            grid-column: span 1;
-            grid-row: 1;
-        }
-
-        @media only screen and (min-width:451px) and (max-width:960px){
-            grid-column: span 3;
-            grid-row: span 1;
-        }        
-
-
-                 display: flex;
-                justify-content: center;
-                 grid-column-start: 2;
-                grid-column-end: 5;
-
+    }
+    .nav-dos li a{
+        padding-right: 10px ;
+        padding-left: 10px;
+        background: rgb(33, 31, 31);
+        border-radius: 20px;
     }
 }

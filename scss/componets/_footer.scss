@@ -1,15 +1,27 @@
 .footer-contenedor{
-    
+   margin-top: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    margin: auto;
-    display: flex;
+     display: flex;
     justify-content: space-between;
+    background: black;
+    h4{
+        padding-top: 10px;
+        color: white;
+        text-align: center;
+    }
+
     .logo{
+        padding-top: 20px;
         padding-left: 15px;
         padding-right: 50px;
+    a{
+        font-size: 20px;
+        display: block;
     }
+    }
+
     .nav-footer{
         margin-right: 15px;
         height: 100%;
