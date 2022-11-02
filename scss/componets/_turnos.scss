@@ -9,6 +9,20 @@
         align-items: center;
         width: 100%;
 
+        video{
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                width: 100%;
+            }
+            @media only screen and (max-width:450px){
+                width: 100%;
+            }
+            margin-bottom: 20px;
+
+           height: 100%;
+           width: 70%;
+           border: solid blue;
+        }
+
         .img-turnos1 
         {
             @media only screen and (max-width:450px)
@@ -25,16 +39,17 @@
                 padding-bottom: 50px;
                 padding-top: 50px;
             }
-            height: 100%;
-            width: 10%;
+            height: 70%;
+            width: 80%;
         }
         .img-turnos3{
             @media only screen and (max-width:450px)
             {
                 padding-bottom: 50px;
                 margin-top: 50px;
+                margin-bottom: 70px;
             }
-            width: 30%;
+            width: 100%;
             height: 100%;
         }
     }
@@ -42,4 +57,61 @@
     margin: 10px;
     padding: 10px;
    } 
+    
+
+   .consultas{
+    h4{
+        font-size: 22px;
+    margin-bottom: 20px;
+    }
+    p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    a{
+        color: white;
+       
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    width: 400px;
+    height: 100%;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: oswald;
+    color: white;
+    box-shadow: 7px 13px 37px;
+
+    .control{
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: oswald;
+        font-size: 18px;
+        color: white;
+       
+
+
+    }
+    .boton{
+        width: 100%;
+        background: #1f53c5;
+        border: none ;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+   }
+
 }

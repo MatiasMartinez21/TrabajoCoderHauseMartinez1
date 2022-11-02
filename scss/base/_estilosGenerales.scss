@@ -32,4 +32,15 @@ p{
     font-size: nth($tamano-texto, $n:4 );
     margin-bottom: 20px;
 }
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: nth($tamano-texto, $n:2 );
+}
 // @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');

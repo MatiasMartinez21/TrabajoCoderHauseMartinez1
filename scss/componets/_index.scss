@@ -19,6 +19,14 @@
     
     }
     .nav-dos li a{
+        @media only screen and (max-width:450px){
+            margin-top: 10px;
+            margin-bottom: 70px;
+        }
+        @media only screen and (min-width:451px) and (max-width:960px){
+            margin-top: 10px;
+            margin-bottom: 70px;
+        }
         padding-right: 10px ;
         padding-left: 10px;
         background: rgb(33, 31, 31);

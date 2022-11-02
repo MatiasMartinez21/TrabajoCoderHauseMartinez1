@@ -44,7 +44,7 @@
             grid-row: span 1;
         }
 
-        height: 100%;
+        height: 70%;
         grid-column-start: 1;
         grid-column-end: 6;
         .img-nosotros
@@ -59,11 +59,17 @@
         {
             grid-column: span 1;
              grid-row: span 1;
+             width: 80%;
+             height: 100%;
+             margin-left: 50px;
+             margin-bottom: 30px;
          
         }
         border: solid;
         grid-column-start: 3;
         grid-column-end: 4;
+        width: 100%;
+        height: 80%;
 
         .img-nosotros
         {
@@ -77,6 +83,8 @@
         {
             grid-column: span 1;
             grid-row: span 1;
+           margin-bottom: 50px;
+
         }
        
         width: 100%;
@@ -147,8 +155,8 @@
     }
 
 
-
-
-
-
 }
+
+
+
+

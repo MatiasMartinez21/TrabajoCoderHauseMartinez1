@@ -1,4 +1,5 @@
 @import "../base/extend";
+@import "../base/listas";
 
 .main-servicios{
     display: grid;
@@ -7,6 +8,32 @@ grid-template-rows: repeat(6, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 
+
+
+div{
+    h3{
+        @media only screen and (max-width:450px){
+            font-size: nth($tamano-texto, $n:1 );
+            line-height: 15px;
+            margin: 15px;
+            padding-bottom: 10px;
+        }
+        @media only screen and (min-width:451px) and (max-width:960px){
+            font-size: nth($tamano-texto, $n:1 );
+            line-height: 15px;
+            margin: 15px;
+            padding-bottom: 10px;
+
+        }
+
+        margin: 50px;
+        line-height: 30px;
+        font-size: nth($tamano-texto, $n:3 );
+        font-family: oswald;
+        
+    }
+  
+}
 
 video{
     
