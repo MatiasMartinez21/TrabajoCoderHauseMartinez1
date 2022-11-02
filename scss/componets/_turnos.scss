@@ -3,6 +3,20 @@
     margin: 30px;
     padding: 30px;
 
+    .ap-flotante{
+        @media only screen and (max-width:450px){
+            width: 100%;
+            p{
+                font-size: 1rem;
+            }
+        }
+        position: fixed;
+        right: 10px;
+        bottom: 200px;
+        width: 10%;
+    }
+
+    
     .turnos {
         display: flex;
         flex-direction: column;
@@ -60,6 +74,13 @@
     
 
    .consultas{
+    @media only screen and (max-width:450px){
+        width: 90%;
+        height: 100%;
+        
+            
+        
+    }
     h4{
         font-size: 22px;
     margin-bottom: 20px;
@@ -67,7 +88,7 @@
     p{
         height: 40px;
         text-align: center;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 40px;
     }
     a{
@@ -104,12 +125,17 @@
 
     }
     .boton{
+        @media only screen and (max-width:450px){
+            padding: 0px;
+            margin: 10px;
+            
+        }
         width: 100%;
         background: #1f53c5;
         border: none ;
         padding: 12px;
         color: white;
-        margin: 16px 0;
+          margin: 16px 0;
         font-size: 16px;
     }
    }

@@ -24,16 +24,19 @@
 
 
     h3{
+        @media only screen and (min-width:451px) and (max-width:960px){
+            font-size: nth($tamano-texto, $n:2 )
+        }
         @media only screen and (max-width:450px)
                     {
                         font-size: nth($tamano-texto, $n:1 );
+                    //    margin-bottom: 25px;
 
                     }
         color: white;
          font-family: oswald;
          font-size: nth($tamano-texto, $n:3 );
-        padding-bottom: 15px;
-        margin-bottom: 15px;
+       
     }
 
     .img1{
@@ -50,11 +53,12 @@
         .img-nosotros
     {
         width: 100%;
-        height: 80%;
+        height: 100%;
        @extend %marcos;
     }
     }
     .img2{
+       
         @media only screen and (max-width:450px)
         {
             grid-column: span 1;
@@ -65,7 +69,7 @@
              margin-bottom: 30px;
          
         }
-        border: solid;
+      
         grid-column-start: 3;
         grid-column-end: 4;
         width: 100%;
@@ -79,14 +83,17 @@
     }
     }
     .img3{
+       
         @media only screen and (max-width:450px)
         {
             grid-column: span 1;
             grid-row: span 1;
-           margin-bottom: 50px;
+        //    margin-bottom: 50px;
+        //    margin-top: 20px;
+           
 
         }
-       
+     
         width: 100%;
         height: 100%;
         grid-column-start: 2;
@@ -108,9 +115,9 @@
             grid-column: span 1;
             grid-row: span 1;
         }
-     
+     margin-top: 20px;
         
-     border: solid ;
+    
         grid-column-start: 2;
         grid-column-end: 5;
 

@@ -28,16 +28,27 @@ p {
   font-size: 2rem;
 }
 
+.titulo-stic {
+  position: sticky;
+  top: 0;
+}
+
 .titulo-de-todos {
+  background: #1f53c5;
   font-family: oswald;
   color: aliceblue;
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 60px;
 }
 
 h3 {
   color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #24303c;
+  text-align: center;
+  border: solid #1f53c5;
 }
 
 h4 {
@@ -50,6 +61,16 @@ li {
   font-size: 2rem;
 }
 
+.div-inicio-nav a {
+  margin-right: 30px;
+  margin-left: 70px;
+}
+@media only screen and (min-width: 99px) {
+  .div-inicio-nav a {
+    margin-left: 0;
+  }
+}
+
 .footer-contenedor {
   margin-top: auto;
   display: grid;
@@ -57,7 +78,7 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: black;
+  background: rgb(33, 37, 41);
 }
 .footer-contenedor h4 {
   padding-top: 10px;
@@ -166,8 +187,11 @@ li {
   color: white;
   font-family: oswald;
   font-size: 2.5rem;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .main-nosotros h3 {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 450px) {
   .main-nosotros h3 {
@@ -187,10 +211,9 @@ li {
 }
 .main-nosotros .img1 .img-nosotros {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .main-nosotros .img2 {
-  border: solid;
   grid-column-start: 3;
   grid-column-end: 4;
   width: 100%;
@@ -220,7 +243,6 @@ li {
   .main-nosotros .img3 {
     grid-column: span 1;
     grid-row: span 1;
-    margin-bottom: 50px;
   }
 }
 .main-nosotros .img3 .img-nosotros {
@@ -228,7 +250,7 @@ li {
   height: 80%;
 }
 .main-nosotros .img4 {
-  border: solid;
+  margin-top: 20px;
   grid-column-start: 2;
   grid-column-end: 5;
 }
@@ -290,15 +312,15 @@ li {
   margin-top: 15px;
   font-size: 2.5rem;
 }
-.main-promociones div h3 {
+.main-promociones div .h4toques {
   margin: 15px;
 }
-.main-promociones div h3 .enla-turnos:hover {
+.main-promociones div .h4toques .enla-turnos:hover {
   transform: scale(3);
   transition-property: all;
   transition-duration: 2s;
 }
-.main-promociones div h3 a {
+.main-promociones div .h4toques a {
   text-decoration: underline;
   color: blue;
 }
@@ -380,6 +402,20 @@ li {
   margin: 30px;
   padding: 30px;
 }
+.main-turnos .ap-flotante {
+  position: fixed;
+  right: 10px;
+  bottom: 200px;
+  width: 10%;
+}
+@media only screen and (max-width: 450px) {
+  .main-turnos .ap-flotante {
+    width: 100%;
+  }
+  .main-turnos .ap-flotante p {
+    font-size: 1rem;
+  }
+}
 .main-turnos .turnos {
   display: flex;
   flex-direction: column;
@@ -450,6 +486,12 @@ li {
   color: white;
   box-shadow: 7px 13px 37px;
 }
+@media only screen and (max-width: 450px) {
+  .main-turnos .consultas {
+    width: 90%;
+    height: 100%;
+  }
+}
 .main-turnos .consultas h4 {
   font-size: 22px;
   margin-bottom: 20px;
@@ -457,7 +499,7 @@ li {
 .main-turnos .consultas p {
   height: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 40px;
 }
 .main-turnos .consultas a {
@@ -485,6 +527,12 @@ li {
   color: white;
   margin: 16px 0;
   font-size: 16px;
+}
+@media only screen and (max-width: 450px) {
+  .main-turnos .consultas .boton {
+    padding: 0px;
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

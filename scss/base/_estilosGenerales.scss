@@ -25,15 +25,25 @@ p{
     color:white;
     font-size: nth($tamano-texto, $n:2 );
 }
+.titulo-stic{
+    position: sticky;
+    top: 0;
+}
 .titulo-de-todos{
+    background: #1f53c5;
      font-family: oswald ;
     color: aliceblue;
     text-align: center;
-    font-size: nth($tamano-texto, $n:4 );
-    margin-bottom: 20px;
+    font-size: nth($tamano-texto, $n:5 );
+    margin-bottom: 60px;
 }
 h3{
     color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #24303c ;
+    text-align: center;
+    border: solid  #1f53c5;
 }
 h4{
     color: white;
@@ -43,4 +53,14 @@ li{
     color: white;
     font-size: nth($tamano-texto, $n:2 );
 }
+.div-inicio-nav{
+    a{
+        @media only screen and (min-width:99px){
+            margin-left: 0;
+           
+        }
+margin-right: 30px;
+margin-left: 70px;}
+}
+
 // @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
