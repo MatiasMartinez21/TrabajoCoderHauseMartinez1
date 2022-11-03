@@ -316,7 +316,7 @@ li {
   margin: 15px;
 }
 .main-promociones div .h4toques .enla-turnos:hover {
-  transform: scale(3);
+  transform: scale(2);
   transition-property: all;
   transition-duration: 2s;
 }
@@ -405,15 +405,17 @@ li {
 .main-turnos .ap-flotante {
   position: fixed;
   right: 10px;
-  bottom: 200px;
-  width: 10%;
+  bottom: 550px;
+  width: 200px;
 }
 @media only screen and (max-width: 450px) {
   .main-turnos .ap-flotante {
-    width: 100%;
+    width: 150px;
   }
   .main-turnos .ap-flotante p {
-    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
   }
 }
 .main-turnos .turnos {
